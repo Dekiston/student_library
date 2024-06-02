@@ -33,6 +33,14 @@ INSTALLED_APPS = [
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
+<<<<<<< Updated upstream
+=======
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'django',
+    'pandas',
+    'requests',
+>>>>>>> Stashed changes
     'bootstrap5',
     'django_celery_beat',
     'django.contrib.messages',

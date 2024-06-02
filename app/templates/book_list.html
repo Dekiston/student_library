@@ -5,6 +5,7 @@
 {% block content %}
 <h1>Вывод книг</h1>
 <form method="get" action="">
+<<<<<<< Updated upstream
     <h2>Форма фильтрации</h2>
     <div class="mb-3">
         <label for="fieldAuthor" class="form-label">Автор</label>
@@ -37,6 +38,29 @@
                 value="{{page_size}}"
         />
     </div>
+=======
+  <h2>Форма фильтрации</h2>
+  <div class="mb-3">
+    <label for="fieldAuthor" class="form-label">Автор</label>
+    <input
+      type="text"
+      class="form-control"
+      id="fieldAuthor"
+      name="{{form.author.name}}"
+      placeholder="введите автора"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="fieldAuthor" class="form-label">Название</label>
+    <input
+      type="text"
+      class="form-control"
+      id="fieldAuthor"
+      name="{{form.title.name}}"
+      placeholder="введите название"
+    />
+  </div>
+>>>>>>> Stashed changes
 
     <button type="submit" class="btn btn-primary">Искать</button>
 </form>
