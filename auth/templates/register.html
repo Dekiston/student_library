@@ -38,7 +38,7 @@
                 <div class="col-12 col-md-9 col-lg-7 col-xl-6">
                     <div class="card" style="border-radius: 15px;">
                         <div class="card-body p-5">
-                            <h2 class="text-uppercase text-center mb-5">Create an account</h2>
+                            <h2 class="text-uppercase text-center mb-5">Создать аккаунт</h2>
 
                             <form action="." method="post">
 
@@ -75,10 +75,10 @@
                                 </div>
 
                                 <div class="form-outline mb-4">
-                                    <select class="form-select" aria-label="Default select example" name="univer_name">
+                                    <select class="form-select" aria-label="Default select example" name="university_name">
                                       <option value="-" selected>Не выбрано</option>
                                         {% for name in all_university_names %}
-                                            <option value="{{name}}">{{ name }}</option>
+                                            <option value="{"ВолГУ"}">{{ name }}</option>
                                         {% endfor %}
                                     </select>
                                     <label class="form-label"
@@ -89,18 +89,18 @@
                                 <div class="d-flex justify-content-center">
                                     <button type="submit"
                                             class="btn btn-success btn-block btn-lg gradient-custom-4 text-body">
-                                        Register
+                                        Регистрация
                                     </button>
                                 </div>
                                 {% csrf_token %}
-                                <p class="text-center text-muted mt-5 mb-0">Have already an account? <a href="{% url 'login' %}"
-                                                                                                        class="fw-bold text-body"><u>Login
-                                    here</u></a></p>
+                                <p class="text-center text-muted mt-5 mb-0">Уже есть аккаунт? <a href="{% url 'login' %}"
+                                                                                                        class="fw-bold text-body"><u>Авторизируйтесь
+                                    здесь</u></a></p>
 
                             </form>
                         <div>
                             {% if error_message %}
-                                <p>{{ error_message }}</p>
+                                <p>Ошибка, проверьте правильность заполнения формы</p>
                             {% endif %}
                         </div>
                         </div>

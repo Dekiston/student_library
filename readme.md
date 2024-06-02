@@ -1,9 +1,15 @@
 
 ## Запуск без docker-compose
+0) Создать виртуальную среду 
+    ```
+    python3 -mvenv venv
+    . ./venv/bin/activate
+    ```
+
 1) Создать миграции приложения
     ```
-    python manage.py makemigrations
-    python manage.py migrate
+    python3 manage.py makemigrations
+    python3 manage.py migrate
     ```
 
 2) Запуск redis. Env `REDIS_URL=redis://0.0.0.0:6379`
@@ -20,5 +26,5 @@
     ```
     celery -A base worker --loglevel=INFO
     ```
-4) Создать суперюзера `python manage.py createsuperuser`
-5) Запустить проект `python manage.py runserver`
+4) Создать суперюзера `python3 manage.py createsuperuser`
+5) Запустить проект `python3 manage.py runserver`
